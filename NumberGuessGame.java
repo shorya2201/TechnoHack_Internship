@@ -21,7 +21,8 @@ public class NumberGuessGame {
             guess = sc.nextInt();
             if (guess == number) {
                 System.out.println("Congratulations! You have Successfully Guessed the Number!! ");
-                break; // Exits the loop
+                break; 
+                // Exits the loop
             } else if (guess < number) {
                 System.out.println("The Number is Greater than " + guess);
             } else if (guess > number) {
@@ -29,7 +30,8 @@ public class NumberGuessGame {
             }
         }
 
-        if (i == trials) { // If trials are exhausted and player loses
+        if (i == trials) { 
+            // If trials are exhausted and player loses
             System.out.println("You have exhausted " + trials + " trials.");
             System.out.println("You Lose !! The Correct number was " + number);
         }
